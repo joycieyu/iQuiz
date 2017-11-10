@@ -27,6 +27,17 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VKk-bQ-EQU" id="Om7-Fx-4Za">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="37e-vV-sDq">
+                                                    <rect key="frame" x="321" y="0.0" width="46" height="36"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="37e-vV-sDq" firstAttribute="leading" secondItem="Om7-Fx-4Za" secondAttribute="leading" constant="321" id="5OM-3s-Y2E"/>
+                                                <constraint firstAttribute="bottom" secondItem="37e-vV-sDq" secondAttribute="bottom" constant="7.5" id="6En-ti-tLX"/>
+                                                <constraint firstAttribute="trailing" secondItem="37e-vV-sDq" secondAttribute="trailing" constant="8" id="UCF-oE-bwj"/>
+                                                <constraint firstItem="37e-vV-sDq" firstAttribute="top" secondItem="Om7-Fx-4Za" secondAttribute="top" id="uZX-Pp-F8m"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -35,33 +46,26 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="JcA-3h-JfI"/>
                                 </connections>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxo-wL-7Fq">
-                                <rect key="frame" x="0.0" y="-44" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem title="Item" id="Rjg-sA-99n"/>
-                                </items>
-                            </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRD-4q-NuT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Settings" width="377.5" id="mVd-Jc-ZEK"/>
+                                    <barButtonItem title="Settings" width="377.5" id="mVd-Jc-ZEK">
+                                        <connections>
+                                            <action selector="alert:" destination="BYZ-38-t0r" id="jEm-f0-uP6"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Fs-03-QXm"/>
-                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8F4-8E-nf5"/>
-                            <constraint firstItem="QRD-4q-NuT" firstAttribute="top" secondItem="bxo-wL-7Fq" secondAttribute="bottom" id="Knd-ob-UQ5"/>
-                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="PTK-RC-edk"/>
-                            <constraint firstItem="QRD-4q-NuT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VQE-Za-AB3"/>
-                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cyz-IS-xOT"/>
-                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fNj-dI-gLB"/>
-                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="top" secondItem="bxo-wL-7Fq" secondAttribute="bottom" id="naA-rC-jo4"/>
-                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="soO-H4-Ib9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QRD-4q-NuT" secondAttribute="bottom" constant="623" id="u8h-D2-hWf"/>
-                            <constraint firstItem="QRD-4q-NuT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yFf-gh-8WD"/>
-                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zHP-wa-b5p"/>
+                            <constraint firstAttribute="trailing" secondItem="qpH-Dc-kzS" secondAttribute="trailing" id="0sm-f4-pHJ"/>
+                            <constraint firstItem="QRD-4q-NuT" firstAttribute="top" secondItem="qpH-Dc-kzS" secondAttribute="top" id="NKS-HN-N6I"/>
+                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PU1-Dp-bAS"/>
+                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TKR-zL-wV6"/>
+                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="trailing" secondItem="QRD-4q-NuT" secondAttribute="trailing" id="TyA-ef-pWR"/>
+                            <constraint firstItem="QRD-4q-NuT" firstAttribute="leading" secondItem="qpH-Dc-kzS" secondAttribute="leading" id="Ygu-3k-APv"/>
+                            <constraint firstItem="QRD-4q-NuT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dVx-pU-BHO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -71,4 +75,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.png" width="128" height="128"/>
+    </resources>
 </document>

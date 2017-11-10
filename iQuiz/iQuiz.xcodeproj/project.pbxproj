@@ -12,6 +12,7 @@
 		211871A51FB52C0700D734A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211871A31FB52C0700D734A6 /* Main.storyboard */; };
 		211871A71FB52C0700D734A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211871A61FB52C0700D734A6 /* Assets.xcassets */; };
 		211871AA1FB52C0700D734A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211871A81FB52C0700D734A6 /* LaunchScreen.storyboard */; };
+		211871B21FB55F8F00D734A6 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211871B11FB55F8F00D734A6 /* ViewControllerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		211871A61FB52C0700D734A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		211871A91FB52C0700D734A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		211871AB1FB52C0700D734A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211871B11FB55F8F00D734A6 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		211871B31FB5615F00D734A6 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../../../../../Desktop/arrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +58,13 @@
 			isa = PBXGroup;
 			children = (
 				2118719F1FB52C0700D734A6 /* AppDelegate.swift */,
+				211871B11FB55F8F00D734A6 /* ViewControllerTableViewCell.swift */,
 				211871A11FB52C0700D734A6 /* ViewController.swift */,
 				211871A31FB52C0700D734A6 /* Main.storyboard */,
 				211871A61FB52C0700D734A6 /* Assets.xcassets */,
 				211871A81FB52C0700D734A6 /* LaunchScreen.storyboard */,
 				211871AB1FB52C0700D734A6 /* Info.plist */,
+				211871B31FB5615F00D734A6 /* arrow.png */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			files = (
 				211871A21FB52C0700D734A6 /* ViewController.swift in Sources */,
 				211871A01FB52C0700D734A6 /* AppDelegate.swift in Sources */,
+				211871B21FB55F8F00D734A6 /* ViewControllerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
