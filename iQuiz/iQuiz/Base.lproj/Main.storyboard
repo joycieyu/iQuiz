@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qpH-Dc-kzS">
-                                <rect key="frame" x="0.0" y="32" width="375" height="635"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qpH-Dc-kzS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="VKk-bQ-EQU">
@@ -35,13 +35,33 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="JcA-3h-JfI"/>
                                 </connections>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxo-wL-7Fq">
+                                <rect key="frame" x="0.0" y="-44" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="Rjg-sA-99n"/>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRD-4q-NuT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Settings" width="377.5" id="mVd-Jc-ZEK"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qpH-Dc-kzS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Fs-03-QXm"/>
                             <constraint firstItem="qpH-Dc-kzS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8F4-8E-nf5"/>
+                            <constraint firstItem="QRD-4q-NuT" firstAttribute="top" secondItem="bxo-wL-7Fq" secondAttribute="bottom" id="Knd-ob-UQ5"/>
                             <constraint firstItem="qpH-Dc-kzS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="PTK-RC-edk"/>
+                            <constraint firstItem="QRD-4q-NuT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VQE-Za-AB3"/>
                             <constraint firstItem="qpH-Dc-kzS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cyz-IS-xOT"/>
+                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fNj-dI-gLB"/>
+                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="top" secondItem="bxo-wL-7Fq" secondAttribute="bottom" id="naA-rC-jo4"/>
+                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="soO-H4-Ib9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QRD-4q-NuT" secondAttribute="bottom" constant="623" id="u8h-D2-hWf"/>
+                            <constraint firstItem="QRD-4q-NuT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yFf-gh-8WD"/>
+                            <constraint firstItem="qpH-Dc-kzS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zHP-wa-b5p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
